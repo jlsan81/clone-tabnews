@@ -1,4 +1,5 @@
-import database from "../../../../infra/database.js";
+//import database from "../../../../infra/database.js";
+import database from "infra/database.js";
 
 async function status(request, response) {
   const result = await database.query('SELECT 1+1 as sum;');
@@ -8,4 +9,4 @@ async function status(request, response) {
     .json({"Sempre Flamengo": "Vai pra cima deles Mengão!" });
 }
 
-export default status;  
+export default status;   

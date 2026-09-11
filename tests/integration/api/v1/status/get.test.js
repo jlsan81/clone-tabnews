@@ -26,6 +26,6 @@ test("GET  to /api/v1/status returns 200 OK", async () => {
   expect(responseBody.opened_connections).toEqual(1);
   expect(responseBody.opened_connections).toBeGreaterThanOrEqual(0);
 
-  expect(responseBody.version).toEqual("18.4"); 
+  expect(responseBody.version).toEqual("18.4");
    
 }); 

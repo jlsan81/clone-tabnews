@@ -11,7 +11,7 @@ test("GET  to /api/v1/status returns 200 OK", async () => {
   
   
   console.log('Máximo de Conexões:'+responseBody.max_connections); 
-  console.log('Conexões Abertas:'+responseBody.opened_connections);
+  console.log('Conexões Abertas:'+responseBody.opened_connections); 
  
 
   const parseUpdatedAt = new Date(responseBody.updated_at).toISOString();
